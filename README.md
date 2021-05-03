@@ -1,10 +1,9 @@
-# MERN Stack - Ecommerce
-> Ecommerce website built with the MERN stack with React Context API for state management, pure CSS for style
+Used React Context API for state management, pure CSS for style
 
-## Demo: https://devat-ecommerce.herokuapp.com/
+## Demo: https://nishshop.herokuapp.com/
 
-## Author: Dev AT
-## Youtube tutorials: https://youtu.be/AjItjNc0bHA
+## Author: Nishanth
+
 
 ## Install dependencies for server 
 ### `npm install`
@@ -14,23 +13,14 @@
 
 ## Connect to your mongodb and add info in .env
 
-## Add your paypal client id in client/src/components/mainpages/cart/PaypalButton.js
+MONGODB_URL =  mongodb+srv://Nish1988:Nish1988@cluster0.ch13u.mongodb.net/ecommerce?retryWrites=true&w=majority
 
-## Run the client & server with concurrently
-### `npm run dev`
+ACCESS_TOKEN_SECRET = @q^Y[+?7Zy3gPW`Gw=4$;)+(P+,~CEZWUR[{9k!CLs;qMaeL]x
 
-## Run the Express server only
-### `npm run server`
+REFRESH_TOKEN_SECRET = <zMJGBQb>,dUJ</.7Hr6xbv7Zx'W]fPLr9ad9Pxp,"y]Nzr~GXZ~*a+Zs^xT"\6qjsL#N<g&<Y`aRT_9mhXtSLM'}V\H/kRC/\;U
 
-## Run the React client only
-### `npm run client`
+CLOUD_NAME = dvh1l7wx9
 
-### Server runs on http://localhost:5000 and client on http://localhost:3000
+CLOUD_API_KEY = 682136841235772
 
-### User interface 
-
-![alt](https://res.cloudinary.com/devatchannel/image/upload/v1599568147/test/1_pe9ism.png)
-
-### Admin interface 
-
-![alt](https://res.cloudinary.com/devatchannel/image/upload/v1599568148/test/2_obw2r7.png)
+CLOUD_API_SECRET = TFZnQYkVOXf2d3o11-qlkQ5Pv7A
