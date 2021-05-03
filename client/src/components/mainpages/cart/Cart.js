@@ -13,7 +13,7 @@ function Cart() {
     useEffect(() =>{
         const getTotal = () =>{
             const total = cart.reduce((prev, item) => {
-                return prev + (((item.price)+((item.tax===0)?0:((item.price*item.tax)/100))) * item.quantity)
+                return prev + (((item.price)+((item.tax===0)?0:((item.price*item.tax)/100))+((item.imported)?((item.price*5)/100):0)) * item.quantity)
             },0)
 
         
@@ -25,7 +25,7 @@ function Cart() {
         }
         const getTotalTax = ()=>{
             const totaltax = cart.reduce((prev, item) => {
-                return prev + ((((item.tax===0)?0:((item.price*item.tax)/100))) * item.quantity)
+                return prev + ((((item.tax===0)?0:((item.price*item.tax)/100))+((item.imported)?((item.price*5)/100):0)) * item.quantity)
             },0)
 
             setTotaltax(parseFloat(totaltax).toFixed(2))
@@ -99,10 +99,10 @@ function Cart() {
         <div>
             {
                 cart.map(product => (
-                    <div className="detail cart" key={product._id}>
+                    <div className="cartdetail cart" key={product._id}>
                         <img src={product.images.url} alt="" />
 
-                        <div className="box-detail">
+                        <div className="cartbox-detail">
                             <h2>{product.title}</h2>
 
                             <h3>&#8377; {product.price * product.quantity}</h3>

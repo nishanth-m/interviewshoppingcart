@@ -40,3 +40,43 @@
 .totaltax h3{
     color: crimson;
 }
+
+
+
+.cartdetail{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 100%;
+}
+.cartdetail img{
+    max-width: 200px;
+    width: 100%;
+    margin: 20px;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+}
+.cartbox-detail{
+    max-width: 500px;
+    width: 100%;
+    margin: 5px 20px;
+}
+.cartbox-detail .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cartbox-detail h2{
+    text-transform: uppercase;
+    color: darkblue;
+    letter-spacing: 2px;
+    font-weight: 2rem;
+}
+.cartbox-detail p{
+    line-height: 1.5;
+    margin: 10px 0;
+    opacity: 0.8;
+}
